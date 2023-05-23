@@ -30,7 +30,8 @@ nav img {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  margin: 5rem auto 0;
+  margin: 0 auto;
+  padding-top: 5rem;
   max-width: 1000px;
 }
 
@@ -44,8 +45,53 @@ nav img {
   color: var(--primary);
 }
 
-.about {
+.about-container {
   background-color: var(--primary);
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  color: var(--background);
+}
+
+.about-container h1 {
+  font-size: clamp(1rem, -1.6563rem + 8.5vw, 3.125rem);
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.about-content dl {
+  display: flex;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.about-content dt {
+  width: 10rem;
+  position: relative;
+}
+
+.about-content dt::after {
+  content: "";
+  height: 20px;
+  width: 1px;
+  right: 0;
+  bottom: -8px;
+  position: absolute;
+  background-color: var(--secondary);
+}
+
+.about-content dd {
+  width: calc(100% - 10rem);
+  text-align: center;
+}
+
+.about-content dt,
+.about-content dd {
+  display: table-cell;
+  padding: 1rem;
 }
 
 .divider {
