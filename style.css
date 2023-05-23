@@ -94,6 +94,19 @@ nav img {
   padding: 1rem;
 }
 
+.gura-model-container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background-color: var(--primary);
+}
+
+model-viewer {
+  width: 80%;
+  height: 80%;
+}
+
 .divider {
   background: url("/assets/peaks-900x600.svg");
   height: 100%;
