@@ -30,7 +30,7 @@ nav img {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  margin: 0 auto;
+  margin: 5rem auto 0;
   max-width: 1000px;
 }
 
@@ -44,9 +44,33 @@ nav img {
   color: var(--primary);
 }
 
+.about {
+  background-color: var(--primary);
+}
+
+.divider {
+  background: url("/assets/peaks-900x600.svg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 900 / 600;
+}
+
 @media (min-width: 641px) {
   .hero {
     flex-direction: row;
     align-items: center;
+  }
+
+  .divider {
+    margin-top: -15rem;
+  }
+}
+
+@media (min-width: 1281px) {
+  .divider {
+    margin-top: -30rem;
   }
 }
