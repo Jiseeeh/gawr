@@ -1,0 +1,27 @@
+:root {
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* colors */
+  --background: #f4fdff;
+  --primary: #2e7acd;
+  --secondary: #83b9ff;
+  --accent: #d9433f;
+}
+
+main {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+nav {
+  display: flex;
+  padding: 1rem;
+}
+
+nav img {
+  margin-left: auto;
+}
