@@ -141,6 +141,11 @@ model-viewer {
   object-fit: cover;
   cursor: pointer;
   margin: 3rem 0;
+  transition: transform 0.15s ease-out;
+}
+
+.swiper-img:hover {
+  transform: scale(1.1);
 }
 
 .divider {
