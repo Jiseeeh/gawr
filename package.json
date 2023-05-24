@@ -12,6 +12,7 @@
     "vite": "^4.2.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "swiper": "^9.3.2"
   }
 }

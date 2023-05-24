@@ -1,4 +1,5 @@
 import Swiper, { Navigation, Autoplay, Pagination } from "swiper";
+import Aos from "aos";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -16,3 +17,5 @@ const swiper = new Swiper(".swiper", {
     delay: 2000,
   },
 });
+
+Aos.init();
