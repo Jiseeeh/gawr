@@ -1,2 +1,18 @@
+import Swiper, { Navigation, Autoplay, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+
 import "./reset.css";
 import "./style.css";
+
+const swiper = new Swiper(".swiper", {
+  modules: [Navigation, Autoplay, Pagination],
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+  },
+  autoplay: {
+    delay: 2000,
+  },
+});
