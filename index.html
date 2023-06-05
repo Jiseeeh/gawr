@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <title>BioGawr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,12 +40,26 @@
             alt="Illustration of gawr gura"
             data-aos="fade-down"
           />
-          <p class="hero-desc" data-aos="fade-up">
-            A descendant of the Lost City of Atlantis, who swam to Earth while
-            saying, "It's so boring down there LOLOLOL!"Gura bought her clothes
-            (and her shark hat) in the human world and she really loves them. In
-            her spare time, she enjoys talking to marine life.
-          </p>
+          <video
+            id="gura-vid"
+            class="video-js"
+            controls
+            preload="auto"
+            height="auto"
+            width="500px"
+            autoplay="true"
+            poster="/assets/gura.png"
+            data-setup="{}"
+          >
+            <source src="/assets/preview.mp4" type="video/mp4" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider
+              upgrading to a web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
         </article>
         <!-- hero -->
 
@@ -76,6 +91,15 @@
               <dt data-aos="fade-down">Fan Name</dt>
               <dd data-aos="fade-down">chumbuds</dd>
             </dl>
+          </section>
+          <section class="origin-container">
+            <h1>Origin</h1>
+            <p class="origin-desc" data-aos="fade-up">
+              A descendant of the Lost City of Atlantis, who swam to Earth while
+              saying, "It's so boring down there LOLOLOL!"Gura bought her
+              clothes (and her shark hat) in the human world and she really
+              loves them. In her spare time, she enjoys talking to marine life.
+            </p>
           </section>
         </article>
         <!-- about -->
@@ -130,11 +154,25 @@
         </div>
         <!-- gura music -->
       </section>
+      <footer>
+        <ul>
+          Leader
+          <li>Seno</li>
+        </ul>
+        <ul>
+          Members
+          <li>Alvarez</li>
+          <li>Camara</li>
+          <li>Tokong</li>
+          <li>Tumbagahan</li>
+        </ul>
+      </footer>
     </main>
     <script
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
     ></script>
+    <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
