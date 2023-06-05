@@ -117,6 +117,8 @@ footer ul li {
 .origin-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
 }
 
 .origin-container h1 {
