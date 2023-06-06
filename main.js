@@ -2,6 +2,7 @@ import Swiper, { Navigation, Autoplay, Pagination } from "swiper";
 import Aos from "aos";
 import "swiper/css";
 import "swiper/css/pagination";
+import "./vanilla-tilt";
 
 import "./reset.css";
 import "./style.css";
