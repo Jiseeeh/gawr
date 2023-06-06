@@ -205,16 +205,14 @@ model-viewer {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  max-width: 400px;
+  max-width: 350px;
   background-color: var(--secondary);
   color: var(--background);
   border-radius: 8px;
 }
 
 .member img {
-  height: 200px;
-  /* width: auto; */
-  max-width: 400px;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -267,6 +265,7 @@ model-viewer {
 
   .members-wrapper {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
